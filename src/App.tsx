@@ -54,7 +54,22 @@ function App() {
   };
 
   return (
-    <div className="bg-white flex h-screen w-screen flex-col p-10">
+    <div className="bg-white flex h-full w-full flex-col p-10">
+      <div className=" gap-4 mb-4 flex">
+        <input
+          type="text"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          className="border shadow p-2 w-96 outline-none rounded"
+        />
+        <button
+          onClick={createTodo}
+          disabled={!input}
+          className="p-2 rounded shadow bg-blue-400"
+        >
+          Create
+        </button>
+      </div>
       <div className="flex flex-col gap-2">
         {todos.map((todo) => (
           <div
@@ -85,22 +100,6 @@ function App() {
             </button>
           </div>
         ))}
-      </div>
-
-      <div className="fixed bottom-4 gap-4 p-4 flex">
-        <input
-          type="text"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          className="border shadow p-2 w-96 outline-none rounded"
-        />
-        <button
-          onClick={createTodo}
-          disabled={!input}
-          className="p-2 rounded shadow bg-blue-400"
-        >
-          Create
-        </button>
       </div>
     </div>
   );
