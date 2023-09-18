@@ -1,3 +1,7 @@
+# Simple app to management your local todo list
+![image](https://github.com/phamquyetthang/local-todo-app/assets/43201625/6959a02d-8294-4c63-a801-f497ba1cf9f4)
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
