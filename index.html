@@ -14,12 +14,43 @@
   <meta name="description"
     content="Ứng dụng đơn giản để giúp bạn quản lý những việc cần làm trên thiết bị cá nhân - Đơn giản, Cá nhân hóa và bảo mật">
   <meta name="keywords" content="todo app, to-do list, React, Tailwind, task management">
-
+  <meta name="robots" content="index, follow">
 </head>
 
 <body>
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Ứng dụng Quản lý Công Việc",
+        "description": "Ứng dụng đơn giản để quản lý danh sách công việc cá nhân trên thiết bị của bạn - Đơn giản, Cá nhân hóa và Bảo mật",
+        "operatingSystem": "Cross-platform",
+        "applicationCategory": "Task Management",
+        "url": "https://phamquyetthang.github.io/local-todo-app/",
+        "author": {
+            "@type": "Person",
+            "name": "Phạm Quyết Thắng"
+        }
+    }
+    </script>
+
+  <script type="application/ld+json">
+      {
+          "@context": "http://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "Todo List App",
+          "description": "A simple app to help you manage your personal to-do list on your devices - Simple, Personalized, and Secure",
+          "operatingSystem": "Cross-platform",
+          "applicationCategory": "Task Management",
+          "url": "https://phamquyetthang.github.io/local-todo-app/",
+          "author": {
+              "@type": "Person",
+              "name": "Quyet Thang Pham"
+          }
+      }
+      </script>
 </body>
 
 </html>
