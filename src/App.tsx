@@ -140,13 +140,22 @@ function App() {
                         <button
                           onClick={(e) => {
                             e.stopPropagation();
+                            navigator.clipboard.writeText(todo.title);
+                          }}
+                          className="pl-2 active:opacity-50"
+                        >
+                          <i className="fa-regular fa-copy"></i>{" "}
+                        </button>
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
                             if (confirm("Delete this ?")) {
                               onDelete(todo.id);
                             }
                           }}
-                          className="pl-2"
+                          className="active:opacity-50"
                         >
-                          <i className="fa-solid fa-trash"></i>
+                          <i className="fa-solid fa-trash"></i>{" "}
                         </button>
                       </div>
                     </div>
